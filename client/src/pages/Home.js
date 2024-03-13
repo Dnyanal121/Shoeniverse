@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <div className="jumbotron text-danger h1 font-weight-bold text-center">
-        <Jumbotron text={["Latest Products", "New Arrivals", "Best Sellers"]} />
+      <h1 color="black">SHOENIVERSE</h1>
       </div>
 
       <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
@@ -18,11 +18,11 @@ const Home = () => {
       <NewArrivals />
 
       <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
-        Best Sellers
+        Products
       </h4>
       <BestSellers />
 
-      <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
+      {/* <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
         Categories
       </h4>
       <CategoryList />
@@ -30,7 +30,7 @@ const Home = () => {
       <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
         Sub Categories
       </h4>
-      <SubList />
+      <SubList /> */}
 
       <br />
       <br />

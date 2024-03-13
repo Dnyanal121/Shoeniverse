@@ -22,6 +22,21 @@ exports.createOrUpdateUser = async (req, res) => {
   }
 };
 
+exports.verifyUser = async (req, res) => {
+  const { _id ,phone} = req.body;
+  try {
+    const updated = await User.findOneAndUpdate(
+      { _id: _id },
+      { isVerified: "true",phone },
+      { new: true }
+    );
+    res.json(updated);
+  } catch (err) {
+    console.log(err);
+    res.status(400).send("User update failed");
+  }
+};
+
 exports.currentUser = async (req, res) => {
   User.findOne({ email: req.user.email }).exec((err, user) => {
     if (err) throw new Error(err);

@@ -24,6 +24,17 @@ export const currentUser = async (authtoken) => {
   );
 };
 
+export const verifyUser = async (data, authtoken) => {
+  return await axios.put(
+    `${process.env.REACT_APP_API}/verify-user`,data,
+    {
+      headers: {
+        authtoken,
+      },
+    }
+  );
+}
+
 export const currentAdmin = async (authtoken) => {
   return await axios.post(
     `${process.env.REACT_APP_API}/current-admin`,

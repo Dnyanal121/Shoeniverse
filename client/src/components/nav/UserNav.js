@@ -17,6 +17,12 @@ const UserNav = () => (
       </li>
 
       <li className="nav-item">
+        <Link to="/user/phone" className="nav-link">
+          Phone
+        </Link>
+      </li>
+
+      <li className="nav-item">
         <Link to="/user/wishlist" className="nav-link">
           Wishlist
         </Link>

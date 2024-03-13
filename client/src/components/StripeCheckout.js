@@ -110,7 +110,7 @@ const StripeCheckout = ({ history }) => {
 
   return (
     <>
-      {!succeeded && (
+      {/* {!succeeded && (
         <div>
           {coupon && totalAfterDiscount !== undefined ? (
             <p className="alert alert-success">{`Total after discount: $${totalAfterDiscount}`}</p>
@@ -118,7 +118,7 @@ const StripeCheckout = ({ history }) => {
             <p className="alert alert-danger">No coupon applied</p>
           )}
         </div>
-      )}
+      )} */}
       <div className="text-center pb-5">
         <Card
           cover={
@@ -133,11 +133,11 @@ const StripeCheckout = ({ history }) => {
           }
           actions={[
             <>
-              <DollarOutlined className="text-info" /> <br /> Total: $
+              <DollarOutlined className="text-info" /> <br /> Total: Rs
               {cartTotal}
             </>,
             <>
-              <CheckOutlined className="text-info" /> <br /> Total payable : $
+              <CheckOutlined className="text-info" /> <br /> Total payable : Rs
               {(payable / 100).toFixed(2)}
             </>,
           ]}

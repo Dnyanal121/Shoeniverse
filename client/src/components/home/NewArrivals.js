@@ -30,8 +30,9 @@ const NewArrivals = () => {
   return (
     <>
       <div className="container">
-        {loading ? (
-          <LoadingCard count={3} />
+        {
+        loading ? (
+          <LoadingCard count={0} />
         ) : (
           <div className="row">
             {products.map((product) => (

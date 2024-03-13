@@ -13,6 +13,14 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "subscriber",
     },
+    isVerified: {
+      type: String,
+      default: "false",
+    },
+    phone:{
+      type: String,
+    default : "no"
+    },
     cart: {
       type: Array,
       default: [],

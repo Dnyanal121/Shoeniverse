@@ -164,11 +164,11 @@ const Checkout = ({ history }) => {
         <br />
         {showAddress()}
         <hr />
-        <h4>Got Coupon?</h4>
+        {/* <h4>Got Coupon?</h4>
         <br />
         {showApplyCoupon()}
         <br />
-        {discountError && <p className="bg-danger p-2">{discountError}</p>}
+        {discountError && <p className="bg-danger p-2">{discountError}</p>} */}
       </div>
 
       <div className="col-md-6">

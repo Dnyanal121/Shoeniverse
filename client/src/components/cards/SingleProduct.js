@@ -88,20 +88,20 @@ const SingleProduct = ({ product, onStarClick, star }) => {
           <TabPane tab="Description" key="1">
             {description && description}
           </TabPane>
-          <TabPane tab="More" key="2">
+          {/* <TabPane tab="More" key="2">
             Call use on xxxx xxx xxx to learn more about this product.
-          </TabPane>
+          </TabPane> */}
         </Tabs>
       </div>
 
       <div className="col-md-5">
         <h1 className="bg-info p-3">{title}</h1>
 
-        {product && product.ratings && product.ratings.length > 0 ? (
+        {/* {product && product.ratings && product.ratings.length > 0 ? (
           showAverage(product)
         ) : (
           <div className="text-center pt-1 pb-3">No rating yet</div>
-        )}
+        )} */}
 
         <Card
           actions={[
@@ -115,16 +115,16 @@ const SingleProduct = ({ product, onStarClick, star }) => {
             <a onClick={handleAddToWishlist}>
               <HeartOutlined className="text-info" /> <br /> Add to Wishlist
             </a>,
-            <RatingModal>
-              <StarRating
-                name={_id}
-                numberOfStars={5}
-                rating={star}
-                changeRating={onStarClick}
-                isSelectable={true}
-                starRatedColor="red"
-              />
-            </RatingModal>,
+            // <RatingModal>
+            //   <StarRating
+            //     name={_id}
+            //     numberOfStars={5}
+            //     rating={star}
+            //     changeRating={onStarClick}
+            //     isSelectable={true}
+            //     starRatedColor="red"
+            //   />
+            // </RatingModal>,
           ]}
         >
           <ProductListItems product={product} />

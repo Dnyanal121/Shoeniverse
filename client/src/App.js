@@ -23,6 +23,7 @@ const History = lazy(() => import("./pages/user/History"));
 const UserRoute = lazy(() => import("./components/routes/UserRoute"));
 const AdminRoute = lazy(() => import("./components/routes/AdminRoute"));
 const Password = lazy(() => import("./pages/user/Password"));
+const Phone = lazy(() => import("./pages/user/Phone"));
 const Wishlist = lazy(() => import("./pages/user/Wishlist"));
 const AdminDashboard = lazy(() => import("./pages/admin/AdminDashboard"));
 const CategoryCreate = lazy(() =>
@@ -81,9 +82,9 @@ const App = () => {
     <Suspense
       fallback={
         <div className="col text-center p-5">
-          __ 
+          SH
           <LoadingOutlined />
-          M 'S__
+          ES
         </div>
       }
     >
@@ -98,6 +99,7 @@ const App = () => {
         <Route exact path="/forgot/password" component={ForgotPassword} />
         <UserRoute exact path="/user/history" component={History} />
         <UserRoute exact path="/user/password" component={Password} />
+        <UserRoute exact path="/user/phone" component={Phone} />
         <UserRoute exact path="/user/wishlist" component={Wishlist} />
         <AdminRoute exact path="/admin/dashboard" component={AdminDashboard} />
         <AdminRoute exact path="/admin/category" component={CategoryCreate} />

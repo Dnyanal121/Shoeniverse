@@ -28,11 +28,11 @@ const Shop = () => {
   const [subs, setSubs] = useState([]);
   const [sub, setSub] = useState("");
   const [brands, setBrands] = useState([
-    "Apple",
-    "Samsung",
-    "Microsoft",
-    "Lenovo",
-    "ASUS",
+    "Nike",
+    "Puma",
+    "Adidas",
+    "Sketchers",
+    "Bata",
   ]);
   const [brand, setBrand] = useState("");
   const [colors, setColors] = useState([
@@ -322,7 +322,7 @@ const Shop = () => {
             mode="inline"
           >
             {/* price */}
-            <SubMenu
+            {/* <SubMenu
               key="1"
               title={
                 <span className="h6">
@@ -340,7 +340,7 @@ const Shop = () => {
                   max="4999"
                 />
               </div>
-            </SubMenu>
+            </SubMenu> */}
 
             {/* category */}
             <SubMenu
@@ -354,7 +354,7 @@ const Shop = () => {
               <div style={{ maringTop: "-10px" }}>{showCategories()}</div>
             </SubMenu>
 
-            {/* stars */}
+            {/* stars
             <SubMenu
               key="3"
               title={
@@ -364,7 +364,7 @@ const Shop = () => {
               }
             >
               <div style={{ maringTop: "-10px" }}>{showStars()}</div>
-            </SubMenu>
+            </SubMenu> */}
 
             {/* sub category */}
             <SubMenu

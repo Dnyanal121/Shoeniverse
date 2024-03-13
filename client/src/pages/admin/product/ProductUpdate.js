@@ -18,7 +18,7 @@ const initialState = {
   quantity: "",
   images: [],
   colors: ["Black", "Brown", "Silver", "White", "Blue"],
-  brands: ["Apple", "Samsung", "Microsoft", "Lenovo", "ASUS"],
+  brands: ["Nike", "Puma", "Adidas", "Sketchers", "Bata"],
   color: "",
   brand: "",
 };
